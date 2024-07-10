@@ -6,92 +6,103 @@
     android:layout_height="wrap_content"
     android:layout_marginStart="16dp"
     android:layout_marginEnd="16dp"
-    android:layout_marginBottom="16dp"
+    android:layout_marginTop="16dp"
     app:cardCornerRadius="8dp"
     app:cardElevation="8dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
+        
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.051"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.039"
-            app:srcCompat="@drawable/user_svgrepo_com" />
-
+            app:srcCompat="@drawable/user_svgrepo_com"
+            />
+        
         <TextView
             android:id="@+id/tvName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="15dp"
-            tools:text="Nancy Wainaina"
+            android:layout_marginStart="8dp"
             android:textColor="@color/black"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            tools:text="Nancy Wainaina"
+            />
+        
         <TextView
             android:id="@+id/tvTitle"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="139dp"
-            android:layout_marginTop="92dp"
-            tools:text="The Charm"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvDate" />
-
+            app:layout_constraintTop_toBottomOf="@+id/tvDate"
+            tools:text="The Charm"
+            />
+        
         <TextView
             android:id="@+id/tvDate"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="88dp"
-            android:layout_marginTop="32dp"
             android:layout_marginEnd="16dp"
-            tools:text="2024-01-01"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="@+id/imageView" />
-
+            app:layout_constraintTop_toTopOf="@+id/tvName"
+            tools:text="2024-01-01"
+            />
+        
         <TextView
             android:id="@+id/tvPreview"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            tools:text="People usually said about the main character of this book that he was a brave man and he was never afraid of anything. They were wrong. He really was brave, but he knew what fear was, like other people. He had a very important job and even colleagues did not know what kind of man he had been before. In his youth, he was very shy and was afraid to talk to strangers."
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ivCharm"
-            app:layout_constraintVertical_bias="0.127" />
-
+            app:layout_constraintTop_toBottomOf="@+id/ivArticlePhoto"
+            tools:text="People usually said about the main character of this book that he was a brave man and he was never afraid of anything. They were wrong. He really was brave, but he knew what fear was, like other people. He had a very important job and even colleagues did not know what kind of man he had been before. In his youth, he was very shy and was afraid to talk to strangers."
+            />
+        
         <ImageView
-            android:id="@+id/ivCharm"
-            android:layout_width="196dp"
-            android:layout_height="257dp"
-            android:layout_marginTop="13dp"
+            android:id="@+id/ivArticlePhoto"
+            android:layout_width="0dp"
+            android:layout_height="240dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.52"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvTitle"
-            app:srcCompat="@drawable/charm" />
-
+            app:srcCompat="@drawable/charm"
+            />
+        
         <TextView
             android:id="@+id/tvContinuation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="308dp"
-            tools:text="See more..."
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvPreview" />
+            app:layout_constraintTop_toBottomOf="@+id/tvPreview"
+            android:text="See more..."
+            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>
